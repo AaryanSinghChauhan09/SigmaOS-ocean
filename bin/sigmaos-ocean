@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# sigmaos-sigmaos-ocean — SigmaOS component manager for sigmaos-ocean (Ocean theme).
+# sigmaos-ocean — SigmaOS component manager for sigmaos-ocean (Ocean theme).
 set -euo pipefail
 APP="sigmaos-ocean"
 PKG="ocean-gtk-theme"
@@ -8,7 +8,7 @@ CFGDIR="$HOME/.config/gtk-3.0"
 CFGFILE="settings.ini"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 
-log() { echo "sigmaos-sigmaos-ocean: $*" >&2; }
+log() { echo "sigmaos-ocean: $*" >&2; }
 
 cmd="${1:-status}"
 case "$cmd" in
@@ -37,5 +37,5 @@ case "$cmd" in
   open|launch)
     command -v "$BIN" >/dev/null 2>&1 && exec "$BIN" "${@:2}" || { log "$BIN not installed"; exit 1; }
     ;;
-  *) echo "usage: sigmaos-sigmaos-ocean install|deploy|status|reset|open [args]" >&2; exit 2;;
+  *) echo "usage: sigmaos-ocean install|deploy|status|reset|open [args]" >&2; exit 2;;
 esac

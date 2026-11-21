@@ -1,15 +1,15 @@
-# SigmaOS-sigmaos-ocean
+# SigmaOS-ocean
 
 SigmaOS integration component for **Ocean theme**.
 
 ## Commands
 
 ```bash
-sigmaos-sigmaos-ocean install   # install package + deploy defaults
-sigmaos-sigmaos-ocean deploy    # copy config templates to $HOME
-sigmaos-sigmaos-ocean status    # binary/package/config report
-sigmaos-sigmaos-ocean reset     # remove deployed config
-sigmaos-sigmaos-ocean open      # launch the application
+sigmaos-ocean install   # install package + deploy defaults
+sigmaos-ocean deploy    # copy config templates to $HOME
+sigmaos-ocean status    # binary/package/config report
+sigmaos-ocean reset     # remove deployed config
+sigmaos-ocean open      # launch the application
 ```
 
 ## Design
